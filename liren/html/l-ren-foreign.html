@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京利仁科技股份有限公司_外贸业务</title>
+    <link rel="stylesheet" href="../css/l-ren-foreign.css">
+    <script src="../js/jquery3.4.1.js"></script>
+</head>
+<body>
+<header>
+    <ul id="top_nav">
+        <li><a href="l-ren-index.html">首页<span>HOME</span></a></li>
+        <li><a href="l-ren-about.html">关于利仁<span>ABOUT</span></a></li>
+        <li><a href="#">视频专区<span>VIDEO</span></a></li>
+        <li><a href="l-ren-product.html">产品中心<span>PRODUCT</span></a></li>
+        <li><a href="#" style="color: red">外贸业务<span>TRADE</span></a></li>
+        <li><a href="l-ren-cooperation.html">招商合作<span>PARTNER</span></a></li>
+        <li><a href="l-ren-contact.html">联系利仁<span>OONTACT</span></a></li>
+        <li><a href="#">English<span>English</span></a></li>
+    </ul>
+</header>
+<article>
+    <section id="sec-one">
+        <div id="nav">
+            <ul class="pc-nav">
+                <li>电饼铛</li>
+                <li>电火锅</li>
+                <li>电压力锅</li>
+                <li>电烧烤盘</li>
+                <li>电饭煲</li>
+                <li>电蒸锅</li>
+                <li>电水瓶</li>
+                <li>电水壶</li>
+                <li>创新产品</li>
+                <li style="background-color: #c21718">网上购物</li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="sec-two">
+        <div class="container">
+            <p>
+                外贸业务
+                <a href="#">外贸业务</a>
+            </p>
+            <img src="../images/foreign-banner.jpg" alt="" class='banner'>
+        </div>
+        <div id="content">
+
+            <div class="leftAside">
+                <img src="../images/foreign-3.gif" alt="">
+                <ul class="nameList">
+                    <li class="change">美国</li>
+                    <li class="change">英国</li>
+                    <li class="change">韩国</li>
+                    <li class="change">日本</li>
+                    <li class="change">新加坡</li>
+                    <li class="change">加拿大</li>
+                    <li class="change">澳大利亚</li>
+                </ul>
+            </div>
+            <div class="center">
+                <ul></ul>
+            </div>
+            <div class="top">
+                <p>INTERNATIONAL COOPERATION</p>
+                <img src="../images/foreign_2.jpg" alt="">
+                <span>利仁小家电国外市场，小家电行业的领跑者！</span>
+            </div>
+        </div>
+    </section>
+    <section id="sec-three">
+        <div class="contain">
+            <ul class="imgList">
+                <li><img src="../images/img-line.png" alt="">在线选购</li>
+                <li><img src="../images/img-store.png" alt="">实体选购</li>
+                <li><img src="../images/img-sale.png" alt="">售后服务</li>
+                <li><img src="../images/img-tel.png" alt="">致电利仁</li>
+            </ul>
+        </div>
+    </section>
+</article>
+<footer>
+    <ul class="footernav">
+        <li>精致美食</li>
+        <li>健康食谱</li>
+        <li>餠食文化</li>
+        <li>创意美食</li>
+    </ul>
+    <ul class="footernav">
+        <li>精致生活</li>
+        <li>品质优生活</li>
+        <li>健康生活</li>
+        <li>厨房新概念</li>
+    </ul>
+    <ul class="footernav">
+        <li>精致服务</li>
+        <li>常见问题</li>
+        <li>售后服务</li>
+        <li>在线咨询</li>
+        <li>客户留言</li>
+    </ul>
+    <ul class="footernav">
+        <li>关于利仁</li>
+        <li>新闻动态</li>
+        <li>企业简介</li>
+        <li>企业文化</li>
+        <li>发展历程</li>
+        <li>工作机会</li>
+    </ul>
+    <ul class="footerImg">
+        <li>
+            <img src="../images/ma.jpg" alt="">
+            <p>利仁官方微信</p>
+        </li>
+        <li>
+            <img src="../images/ma1.jpg" alt="">
+            <p>利仁官方微博</p>
+        </li>
+    </ul>
+    <div class="footerRight">
+        <p>400-882-3366</p>
+        <p>周一到周日 7:30-9:30</p>
+        <p>
+            <a href="#">微商城</a>
+            <a href="#">在线客服</a>
+        </p>
+    </div>
+    <div class="footerBottom">
+        <span>库存查询</span>
+        <span>网站导航</span>
+        <span>在线商城</span>
+        <span>利仁版权图片</span>
+        <span>版权所有 2010-2017北京利仁科技股份有限公司 | 京ICP备06015595号</span>
+    </div>
+</footer>
+</section>
+<script>
+    $(function () {
+        //点击美国切换界面
+        $('.leftAside .nameList li:nth-child(1)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/mg01.jpg',
+                    'title': 'LR-300HF感受生活 乐享健康',
+                    'information': '2007年，北京利仁科技有限责任公司开展了与美国的出口合作，热销美国的产品有LR-300HF以及LR-300G两款高端饼铛，这两款饼铛一经销售就收到了各界人士的欢迎，不仅符合美国人煎牛排以及做烧烤的饮食习惯，更是使得身在异国他乡的华人能品尝到家乡的味道，这样的味道，足以让饼铛的意义得到升华。',
+                },
+                {
+                    'imgSrc': '../images/mg02.jpg',
+                    'title': 'LR-300G感受生活 乐享健康',
+                    'information': '2007年，北京利仁科技有限责任公司开展了与美国的出口合作，热销美国的产品有LR-300HF以及LR-300G两款高端饼铛，这两款饼铛一经销售就收到了各界人士的欢迎，不仅符合美国人煎牛排以及做烧烤的饮食习惯，更是使得身在异国他乡的华人能品尝到家乡的味道，这样的味道，足以让饼铛的意义得到升华。',
+                },
+            ];
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height': '565px',
+                })
+            }
+
+        })
+        //点击英国切换界面
+        $('.leftAside .nameList li:nth-child(2)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/yg01.jpg',
+                    'title': 'GS-A乐享纯鲜营养季',
+                    'information': '北京利仁电器有限责任公司生产的GS-A榨汁机以更高科技的果汁分离技术，能保留水果中更完整的元素，比普通榨汁机效率更高。这种健康的饮食方式使备受海外市场尤其是英国受众的好评与亲睐，更符合英国受众对新鲜营养的高要求。',
+                },
+            ]
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height':'535px',
+                })
+            }
+        })
+        //点击韩国切换界面
+        $('.leftAside .nameList li:nth-child(3)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/hg01.jpg',
+                    'title': 'LR-KZ800轻松美食好体验',
+                    'information': '2010年，北京利仁科技有限责任公司推出的全新产品空气炸锅，并行销韩国等亚洲市场，空气炸锅的诞 生带来了对烧烤王国美食的全新体验。引领了现代时尚健康的烹饪潮流。2013年公司又在公司大力研发下推出了第二代空气炸锅，使得烹饪不再是一件枯燥的家 务，而变成了一种享受生活情趣的方式。',
+                },
+            ]
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height':'535px',
+                })
+            }
+        })
+        //点击日本切换界面
+        $('.leftAside .nameList li:nth-child(4)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/rb01.jpg',
+                    'title': 'LR-BC-168创意生活 轻松体验',
+                    'information': 'BC-168 煎蛋铛畅销日本市场，掀起饼食文化的新潮流。又因产品强大的DIY健康美食的功能特点，内部采用进口水性不粘涂层，更易清洗等功能特点受到日本家庭的喜爱。',
+                },
+            ]
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height':'535px',
+                })
+            }
+        })
+        //点击新加坡切换界面
+        $('.leftAside .nameList li:nth-child(5)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/xjp01.jpg',
+                    'title': 'GS-A乐享纯鲜营养季',
+                    'information': '北京利仁电器有限责任公司生产的GS-A榨汁机以更高科技的果汁分离技术，能保留水果中更完整的元素，比普通榨汁机效率更高。这种健康的饮食方式使备受海外市场尤其是新加坡受众的好评与亲睐，更符合新加坡受众对新鲜营养的高要求。',
+                },
+            ]
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height':'535px',
+                })
+            }
+        })
+        //点击加拿大切换界面
+        $('.leftAside .nameList li:nth-child(6)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/jnd01.jpg',
+                    'title': 'LR-300G利仁精致源于专注',
+                    'information': '自2008年以来，北京利仁科技有限责任公司与加拿大客户展开合作，现如今在加拿大各大城市都有我们 的分销商，利仁的产品电饼铛及料理机行销加拿大全境，受到了各界人士的欢迎。尤其是电饼铛独特而强大的烹饪功能，无论是身在异国的华人品尝家乡的味道，还 是西方人用它来烹制各国美食，这种家味道，足以让饼铛的意义得以升华。近年来，利仁电器不断推陈出新，打造更符合家庭需求的产品，为消费者提供了不同的选 择，满足了各类人群的消费习惯。精湛的工艺设计及上乘的服务，是利仁在消费者中建立良好口碑的基础，同时也是我们可以把业务拓展到加拿大各大城市的原因所 在。成为利仁电器北美市场拓展的重要组成部分。',
+                },
+                {
+                    'imgSrc': '../images/jnd02.jpg',
+                    'title': 'LR-310D利仁精致源于专注',
+                    'information': '自2008年以来，北京利仁科技有限责任公司与加拿大客户展开合作，现如今在加拿大各大城市都有我们 的分销商，利仁的产品电饼铛及料理机行销加拿大全境，受到了各界人士的欢迎。尤其是电饼铛独特而强大的烹饪功能，无论是身在异国的华人品尝家乡的味道，还 是西方人用它来烹制各国美食，这种家味道，足以让饼铛的意义得以升华。近年来，利仁电器不断推陈出新，打造更符合家庭需求的产品，为消费者提供了不同的选 择，满足了各类人群的消费习惯。精湛的工艺设计及上乘的服务，是利仁在消费者中建立良好口碑的基础，同时也是我们可以把业务拓展到加拿大各大城市的原因所 在。成为利仁电器北美市场拓展的重要组成部分。',
+                },
+                {
+                    'imgSrc': '../images/jnd03.jpg',
+                    'title': 'LR-2018D尊贵利仁精致源于专注',
+                    'information': '自2008年以来，北京利仁科技有限责任公司与加拿大客户展开合作，现如今在加拿大各大城市都有我们 的分销商，利仁的产品电饼铛及料理机行销加拿大全境，受到了各界人士的欢迎。尤其是电饼铛独特而强大的烹饪功能，无论是身在异国的华人品尝家乡的味道，还 是西方人用它来烹制各国美食，这种家味道，足以让饼铛的意义得以升华。近年来，利仁电器不断推陈出新，打造更符合家庭需求的产品，为消费者提供了不同的选 择，满足了各类人群的消费习惯。精湛的工艺设计及上乘的服务，是利仁在消费者中建立良好口碑的基础，同时也是我们可以把业务拓展到加拿大各大城市的原因所 在。成为利仁电器北美市场拓展的重要组成部分。',
+                },
+                {
+                    'imgSrc': '../images/jnd04.jpg',
+                    'title': 'LL-A利仁精致源于专注',
+                    'information': '自2008年以来，北京利仁科技有限责任公司与加拿大客户展开合作，现如今在加拿大各大城市都有我们 的分销商，利仁的产品电饼铛及料理机行销加拿大全境，受到了各界人士的欢迎。尤其是电饼铛独特而强大的烹饪功能，无论是身在异国的华人品尝家乡的味道，还 是西方人用它来烹制各国美食，这种家味道，足以让饼铛的意义得以升华。近年来，利仁电器不断推陈出新，打造更符合家庭需求的产品，为消费者提供了不同的选 择，满足了各类人群的消费习惯。精湛的工艺设计及上乘的服务，是利仁在消费者中建立良好口碑的基础，同时也是我们可以把业务拓展到加拿大各大城市的原因所 在。成为利仁电器北美市场拓展的重要组成部分。',
+                },
+            ]
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height':'980px',
+                })
+            }
+        })
+        //点击澳大利亚切换界面
+        $('.leftAside .nameList li:nth-child(7)').on('click', function () {
+            $('.leftAside .nameList li').attr('class', 'change');
+            $(this).attr('class', 'hold');
+            $('.center ul').empty();
+            //定义一个存放产品信息的数组
+            var proInfo = [
+                {
+                    'imgSrc': '../images/adly01.jpg',
+                    'title': 'GS-A 乐享纯鲜营养季',
+                    'information': '2004年，北京利仁科技有限责任公司与澳大利亚客户建立了长期稳固的战略合作关系。利仁公司生产的 GS-A榨汁机，在澳大利亚本土赢得良好的口碑后远销英国、新加坡等地，并受到了当地消费者的一致认可与好评。一机多用的产品特点， 既满足了国外人的消费习惯，也符合快节奏的生活方式，利仁榨汁机给澳大利亚消费者带来了方便快捷的新选择。',
+                },
+            ]
+            if ($('.center ul li').length < proInfo.length) {
+                for (var i = 0; i < proInfo.length; i++) {
+                    var $li = $('<li></li>')
+                    $li.css({
+                        'listStyle': 'none',
+                        'height': '210px',
+                    })
+                    var $imgBox = $('<div class="imgBox"></div>');
+                    var $messageBox = $('<div class="messageBox"></div>');
+                    var $img = $('<img src="" alt="">');
+                    $img.attr('src', proInfo[i]['imgSrc']);
+                    $imgBox.append($img);//插入图片
+                    var $imgP = $('<p></p>');
+                    $imgP.text(proInfo[i]['title']);
+                    $imgBox.append($imgP);//插入标题
+                    var $imgSp = $('<span><img src="../images/coord.jpg" alt="">美国</span>');
+                    $imgBox.append($imgSp);
+                    $li.append($imgBox);
+
+                    $imgBox.css({
+                        'width': '150px',
+                        'height': '180px',
+                        'display': 'inline-block',
+                        // 'float':'left',
+                        'border': '1px solid #a8a8a8',
+                        'padding': '5px 10px',
+                    })
+                    $img.css({
+                        'width': '142px',
+                        'height': '120px',
+                    })
+                    $imgP.css({
+                        'fontSize': '11px',
+                        'color': '#333333',
+                        'margin': '5px 0',
+                    })
+                    $imgSp.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                    var messageBox = $('<div id="messageBox"></div>')
+                    var $messageP = $('<p></p>');
+                    $messageP.text(proInfo[i]['title']);
+                    $messageBox.append($messageP);
+                    var $horSpan = $('<span></span>');
+                    $messageBox.append($horSpan);
+                    var $messageSpan = $("<span></span>");
+                    $messageSpan.text(proInfo[i]['information']);
+                    $messageBox.append($messageSpan);
+                    $li.append($messageBox);
+                    $('.center ul').append($li);
+                    $messageBox.css({
+                        'display': 'inline-block',
+                        'width': '580px',
+                        'float': 'right',
+                        'marginLeft': '30px',
+                    })
+                    $messageP.css({
+                        'fontSize': '14px',
+
+                    })
+                    $horSpan.css({
+                        'display': 'block',
+                        'width': '30px',
+                        'height': '1px',
+                        'margin': '10px 0',
+                        'backgroundColor': '#c21718',
+                    })
+                    $messageSpan.css({
+                        'fontSize': '11px',
+                        'color': '#a8a8a8',
+                    })
+                }
+                $('#content').css({
+                    'height':'535px',
+                })
+            }
+        })
+    })
+</script>
+</body>
+</html>

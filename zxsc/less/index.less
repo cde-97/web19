@@ -1,0 +1,1206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f1f2f6;
+  font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+
+//头部样式
+#head {
+  width: 100%;
+  height: 120px;
+  background: url("../images/header_bg.jpg") no-repeat;
+
+  & > img {
+    margin-left: 336px;
+    width: 344px;
+    height: 120px;
+  }
+
+  .head-nav {
+    list-style: none;
+    display: inline-block;
+    margin-left: 132px;
+    position: relative;
+    bottom: 50%;
+    transform: translateY(50%);
+
+    & > li {
+      float: left;
+      font: 16px STKaiti;
+      color: #FFFFFF;
+      margin-right: 20px;
+
+      .child-list {
+        list-style: none;
+        position: absolute;
+        display: none;
+      }
+
+      & > span {
+        margin-left: 8px;
+
+        img {
+          vertical-align: middle;
+          width: 23px;
+        }
+      }
+    }
+  }
+}
+
+//轮播图样式
+#banner {
+  position: relative;
+
+  .banner-list {
+    width: 100%;
+    height: 593px;
+
+    .list-one {
+      height: 593px;
+      background: url("../images/banner01_bg.jpg") no-repeat;
+      background-size: 100% 100%;
+
+      & > img {
+        position: relative;
+        left: 40%;
+        top: 35%;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      & > img:first-of-type {
+        margin-bottom: 30px;
+      }
+
+      //display: none;
+    }
+
+    .list-two {
+      height: 593px;
+      background: url("../images/banner02_bg.jpg") no-repeat;
+      background-size: 100% 100%;
+
+      & > img {
+        position: relative;
+        left: 20%;
+        vertical-align: middle;
+      }
+
+      & > img:first-of-type {
+        top: 10%;
+        left: 23%;
+      }
+
+      & > img:nth-of-type(2) {
+        top: 10%;
+        left: 25%;
+      }
+
+      & > img:last-of-type {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      display: none;
+    }
+
+    .list-three {
+      height: 593px;
+      background: url("../images/banner01_bg.jpg") no-repeat;
+      background-size: 100% 100%;
+
+      & > img {
+        position: relative;
+        left: 40%;
+        top: 35%;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      & > img:first-of-type {
+        margin-bottom: 30px;
+      }
+
+      display: none;
+    }
+  }
+
+  .point {
+    width: 200px;
+    height: 29px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 30px;
+    background: url("../images/next&prev_line.png") no-repeat left center;
+
+    .prev {
+      width: 29px;
+      height: 29px;
+      display: inline-block;
+      background: url("../images/prev_jiantou.png") no-repeat;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      width: 40px;
+      height: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      top: 25%;
+      transform: translate(-50%);
+      border-radius: 14px;
+      background-color: #F1F2F6;
+      border: 2px solid #E2E2E2;
+
+      li {
+        width: 6px;
+        height: 6px;
+        background: url("../images/next&prev_others.png") no-repeat;
+        cursor: pointer;
+      }
+
+      li:first-of-type {
+        background: url("../images/next&prev_now.png") no-repeat;
+      }
+    }
+
+    .next {
+      width: 29px;
+      height: 29px;
+      display: inline-block;
+      float: right;
+      background: url("../images/next_jiantou.png") no-repeat;
+      cursor: pointer;
+    }
+  }
+}
+
+//主要产品样式
+.main-product {
+  width: 100%;
+  height: 838px;
+  background-color: #F1F2F6;
+  padding-top: 40px;
+
+  .main-content {
+    width: 1100px;
+    height: 838px;
+    margin: 0 auto;
+
+    .goOn {
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 54px;
+      color: #311759;
+      font-family: STKaiti;
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 18px;
+      letter-spacing: 6px;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .three-point {
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    .content-wrap {
+      padding-top: 50px;
+      position: relative;
+
+      .vertical-point {
+        width: 19px;
+        height: 380px;
+        list-style: none;
+        display: inline-flex;
+        float: left;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url("../images/chanpin_nowline_bgline.png") repeat-y 9px;
+        margin: 0 50px 0 40px;
+
+        li {
+          i {
+            width: 19px;
+            height: 19px;
+            display: none;
+            background: url("../images/chanpin_nowline_daquan.png") no-repeat;
+          }
+
+          .now-point-lg {
+            display: block;
+          }
+
+          .now-point-sm {
+            display: none;
+          }
+
+          span {
+            width: 11px;
+            height: 11px;
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+            background: url("../images/chanpin_nowline_xiaoquan.png") no-repeat;
+
+            &:hover {
+              background-position-y: -11px;
+              transition: all 0.2s;
+            }
+          }
+        }
+
+      }
+
+      .content {
+        position: absolute;
+        left: 100px;
+        .content-left{
+          float: left;
+          margin-right: 30px;
+          img{
+            width: 350px;
+          }
+        }
+        .content-right{
+          width:613px;
+          height: 436px;
+          float:right;
+          & > h1{
+            color:#311759;
+            font-size:30px;
+            background:url(../images/pen_line.png) no-repeat left bottom;
+            height:60px;
+            position:relative;
+            margin-top: 0;
+          }
+          .pen{
+            width:61px;
+            height:54px;
+            background:url(../images/pen.png) no-repeat;
+            position:absolute;
+            right:0px;
+            bottom:-1px;
+          }
+          .content-body{
+            color:#565559;
+            font-weight:500;
+            letter-spacing:0px;
+            p{
+              font-family:KaiTi_GB2312;
+            }
+            .p1{
+              overflow:hidden;
+              margin:35px 0 90px 10px;
+              *{
+                float:left;
+              }
+              img{
+                margin-right:25px;
+                margin-top:5px;
+              }
+              h2{
+                font-size:24px;
+                width:470px;
+                text-align: left;
+              }
+              p{
+                width:480px;
+                line-height:24px;
+              }
+            }
+            .p2 p{
+              line-height:24px;
+            }
+            .tip{
+              margin-top:30px;
+              *{
+                float: right;
+              }
+              div{
+                margin-top:14px;
+                font-size:18px;
+              }
+
+            }
+          }
+          .divider-line{
+            position: absolute;
+            left: 53%;
+            margin-left: -150px;
+            top: 232px;
+            z-index: 20;
+            height: 29px;
+            width: 610px;
+            background: url(../images/next&prev_line.png) repeat-x left center;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//公司简介
+.introduce {
+  width: 100%;
+  height: 923px;
+  background: url("../images/mokuai02_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 40px;
+
+  .main-content {
+    width: 1100px;
+    height: 838px;
+    margin: 0 auto;
+
+    & > h1 {
+      text-align: center;
+      font-size: 54px;
+      color: #311759;
+      font-family: STKaiti;
+      margin-top: 80px;
+      color: white;
+    }
+
+    & > h2 {
+      font-size: 18px;
+      letter-spacing: 6px;
+      text-align: center;
+      font-family: Arial;
+      color: white;
+    }
+
+    .three-point {
+      display: block;
+      margin: 40px auto 0;
+    }
+
+    .content {
+      width: 1020px;
+      height: 463px;
+      margin: 80px auto 0;
+
+      .right-content {
+        width: 613px;
+        height: 436px;
+        float: right;
+
+        h1 {
+          background: url("../images/pen_line.png") no-repeat;
+          background-position: left bottom;
+          color: white;
+          height: 60px;
+          font-size: 30px;
+
+          .pen {
+            width: 61px;
+            height: 54px;
+            display: inline-block;
+            background: url("../images/pen.png") no-repeat;
+            float: right;
+          }
+        }
+
+        .gaishu {
+          margin: 40px 0;
+
+          img {
+            margin-left: 20px;
+          }
+
+          dl {
+            width: 470px;
+            float: right;
+            color: #BCA9D7;
+
+            dt {
+              font-size: 20px;
+
+            }
+
+            dd {
+              font-size: 12px;
+              margin-top: 5px;
+              line-height: 24px;
+              font-family: KaiTi_GB2312;
+            }
+          }
+
+        }
+
+        .divide {
+          height: 29px;
+          margin-top: 50px;
+          background: url("../images/next&prev_line.png") repeat-x;
+          background-position-y: 50%;
+        }
+
+        p {
+          margin-top: 20px;
+          color: #bca9d7;
+          font-size: 12px;
+          line-height: 24px;
+        }
+
+        .tip {
+          margin-top: 40px;
+          color: #bca9d7;
+          float: right;
+
+          span {
+            display: inline-block;
+          }
+
+          .left {
+            transform: translateY(-10px);
+          }
+
+          .right {
+            transform: translateY(10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+//业务范围模块
+.mokuai-yewu {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  & > img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  & > h1 {
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+  }
+
+  & > h2 {
+    text-align: center;
+    color: #311759;
+    letter-spacing: 2px;
+  }
+
+  .yewucontent-simple {
+    border-bottom: 1px dashed gray;
+    padding: 30px 0;
+
+    & > div {
+      display: inline-block;
+    }
+
+    .number {
+      width: 148px;
+      font-size: 90px;
+      color: #b5b6ba;
+      font-family: "宋体";
+      transform: translateY(10px);
+    }
+
+    .title {
+      width: 285px;
+      text-align: right;
+      transform: translateY(10px);
+
+      h1 {
+        color: #311859;
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
+
+    .center-img {
+      vertical-align: middle;
+      width: 116px;
+      margin: 0 44px 0 59px;
+      cursor: pointer;
+    }
+
+    .simple-description {
+      width: 320px;
+      margin: 20px 60px 0 0;
+      transform: translateY(20px);
+      font-family: KaiTi_GB2312;
+      line-height: 24px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .icon {
+      width: 67px;
+      height: 67px;
+      overflow: hidden;
+      background: url("../images/business_zhankaishouqi.png") no-repeat;
+      transform: translateY(20px);
+      cursor: pointer;
+    }
+
+    .icon-guanbi {
+      background-position-y: -67px;
+    }
+
+    .detial {
+      width: 790px;
+      display: block;
+      margin: 30px auto 0;
+      line-height: 24px;
+      display: none;
+
+      p {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+    }
+
+    .detial-display {
+      display: block;
+    }
+
+  }
+}
+
+//团队介绍
+.mokuai-tuandui {
+  width: 1100px;
+  height: 640px;
+  margin: 0 auto;
+
+  & > img {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  & > h1 {
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+  }
+
+  & > h2 {
+    text-align: center;
+    color: #311759;
+    letter-spacing: 2px;
+  }
+
+  .teamcontent-wrap {
+    position: relative;
+
+    .team-wrap {
+      margin-top: 50px;
+      padding-top: 80px;
+      width: 1130px;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+
+      .now-team {
+        display: inline-block;
+      }
+
+      & > li {
+        list-style: none;
+        width: 1130px;
+        //display: none;
+        position: absolute;
+
+        &:nth-of-type(2) {
+          left: 1130px;
+        }
+
+        &:nth-of-type(3) {
+          left: 2260px;
+        }
+
+        .team-info {
+          width: 513px;
+          height: 188px;
+          list-style: none;
+          display: inline-block;
+          border: 1px solid #e0e1e5;
+          margin-right: 20px;
+
+          .left-div {
+            width: 202px;
+            height: 190px;
+            display: inline-block;
+            float: left;
+
+            .imgbox {
+              position: relative;
+              transform: translate(40px, -80px);
+              display: inline-block;
+              width: 156px;
+              height: 156px;
+
+              .mask {
+                display: inline-block;
+                width: 156px;
+                height: 156px;
+                background: url("../images/team_amore.png") no-repeat;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                transition: opacity 0.5s;
+              }
+
+              &:hover .mask {
+                //filter: alpha(opacity=100);
+                opacity: 1;
+                transition: opacity 0.5s;
+              }
+            }
+
+            .name {
+              width: 222px;
+              height: 31px;
+              display: inline-block;
+              transform: translateY(-60px);
+              text-align: center;
+              color: #5f4c82;
+              font-size: 24px;
+            }
+
+            .work {
+              width: 222px;
+              height: 31px;
+              display: inline-block;
+              transform: translateY(-60px);
+              text-align: center;
+              color: #5f4c82;
+            }
+          }
+
+          .center-div {
+            width: 248px;
+            height: 150px;
+            display: inline-block;
+            float: left;
+            padding: 20px 0;
+            position: relative;
+
+            .description {
+              color: #565559;
+              line-height: 24px;
+              font-size: 16px;
+            }
+
+            .send-email {
+              width: 245px;
+              height: 45px;
+              position: absolute;
+              bottom: 30px;
+
+              .icon {
+                width: 45px;
+                height: 45px;
+                display: inline-block;
+                background: #d9d9e1 url("../images/team_contact.png") 12px 17px no-repeat;
+                overflow: hidden;
+                float: left;
+              }
+
+              span {
+                width: 195px;
+                height: 45px;
+                display: inline-block;
+                line-height: 45px;
+                text-align: center;
+                float: left;
+                background-color: #e7e8ec;;
+                color: #5f4c82;
+              }
+            }
+
+          }
+
+          .right-slide {
+            width: 47px;
+            height: 190px;
+            background: #2999d6;
+            display: inline-block;
+            float: right;
+
+            li {
+              width: 47px;
+              height: 47px;
+              list-style: none;
+              overflow: hidden;
+            }
+
+            li:first-of-type {
+              background: url("../images/team_contact.png") 12px no-repeat;
+              background-position-y: -28px;
+            }
+
+            li:nth-of-type(2) {
+              background: url("../images/team_contact.png") 12px no-repeat;
+              background-position-y: -75px;
+            }
+
+            li:nth-of-type(3) {
+              background: url("../images/team_contact.png") 12px no-repeat;
+              background-position-y: -126px;
+            }
+
+            li:nth-of-type(4) {
+              background: url("../images/team_contact.png") 12px no-repeat;
+              background-position-y: -166px;
+            }
+
+            li:hover {
+              cursor: pointer;
+              background-color: #2e6da4;
+            }
+          }
+        }
+      }
+    }
+
+    .point {
+      width: 200px;
+      height: 29px;
+      position: absolute;
+      top: 330px;
+      left: 50%;
+      margin-left: -100px;
+      bottom: 30px;
+      background: url("../images/next&prev_line.png") no-repeat left center;
+
+      .prev {
+        width: 29px;
+        height: 29px;
+        display: inline-block;
+        background: url("../images/prev_jiantou.png") no-repeat;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+        width: 40px;
+        height: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%);
+        border-radius: 14px;
+        background-color: #F1F2F6;
+        border: 2px solid #E2E2E2;
+
+        li {
+          width: 6px;
+          height: 6px;
+          background: url("../images/next&prev_others.png") no-repeat;
+          cursor: pointer;
+        }
+
+        li:first-of-type {
+          background: url("../images/next&prev_now.png") no-repeat;
+        }
+      }
+
+      .next {
+        width: 29px;
+        height: 29px;
+        display: inline-block;
+        float: right;
+        background: url("../images/next_jiantou.png") no-repeat;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+//合作机构
+.mokuai-hezuo {
+  background-color: #FFf;
+
+  .content-wrap {
+    width: 1100px;
+    margin: 0 auto;
+
+    .topimg, .three-point, .bottomimg {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .topimg {
+      margin-bottom: 60px;
+    }
+
+    & > h1 {
+      text-align: center;
+      font-size: 54px;
+      color: #311759;
+    }
+
+    & > h2 {
+      text-align: center;
+      color: #311759;
+      letter-spacing: 2px;
+    }
+
+    .content-hezuo {
+      margin: 50px 0;
+
+      .partnerBox {
+        border-right: 1px solid #d3d3d3;
+      }
+
+      .partnerBox, .clientBox {
+        width: 40%;
+        display: inline-block;
+        padding: 0 40px;
+
+        h3 {
+          font-size: 36px;
+          color: #5f4c82;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 18px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+          padding-left: 6px;
+          letter-spacing: 6px;
+          color: #5f4c82;
+        }
+
+        .item-p, .item-c {
+          display: inline-block;
+          width: 30%;
+          height: 80px;
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+
+//联系我们
+.mokuai-lianxi {
+  .content-wrap {
+    width: 1100px;
+    margin: 30px auto 0;
+
+    .three-point {
+      display: block;
+      margin: 0 auto;
+    }
+
+    & > h1 {
+      text-align: center;
+      font-size: 54px;
+      color: #311759;
+    }
+
+    & > h2 {
+      text-align: center;
+      color: #311759;
+      letter-spacing: 2px;
+    }
+
+    .input-wrap {
+      margin-top: 40px;
+
+      i {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        float: left;
+      }
+
+      .input-left {
+        width: 720px;
+        display: inline-block;
+
+        .name-input {
+          display: inline-block;
+          margin-right: 40px;
+
+          .icon-name {
+            background: #e7e8ec url(../images/lianxi_icons.png) 13px 14px no-repeat;
+          }
+
+          input {
+            width: 268px;
+            height: 41px;
+            float: left;
+            padding-left: 10px;
+          }
+        }
+
+        .email-input {
+          display: inline-block;
+
+          .icon-email {
+            background: #e7e8ec url(../images/lianxi_icons.png) 13px 14px no-repeat;
+            background-position: -31px 14px;
+          }
+
+          input {
+            width: 268px;
+            height: 41px;
+            float: left;
+            padding-left: 10px;
+          }
+        }
+
+        .info-input {
+          display: inline-block;
+          margin-top: 30px;
+
+          .icon-info {
+            height: 210px;
+
+            background: #e7e8ec url(../images/lianxi_icons.png) 13px 14px no-repeat;
+            background-position: -128px 14px;
+          }
+
+          textarea {
+            width: 610px;
+            height: 168px;
+            padding: 20px;
+          }
+        }
+      }
+
+      .input-right {
+        display: inline-block;
+        width: 340px;
+
+        .tel-input {
+          display: inline-block;
+          float: left;
+
+          .icon-tel {
+            background: #e7e8ec url(../images/lianxi_icons.png) 13px 14px no-repeat;
+            background-position: -79px 14px;
+          }
+
+          input {
+            width: 268px;
+            height: 41px;
+            float: left;
+            padding-left: 10px;
+          }
+        }
+
+        .shuoming {
+          margin-top: 30px;
+          width: 339px;
+          height: 86px;
+          display: inline-block;
+          float: left;
+        }
+
+        .shuoming2 {
+          width: 339px;
+          height: 72px;
+          display: inline-block;
+          float: left;
+        }
+
+        .sent-message {
+          display: inline-block;
+          float: left;
+          margin-top: 13px;
+
+          .icon-message {
+            background: #e7e8ec url(../images/lianxi_icons.png) 13px 14px no-repeat;
+            background-color: #2999d6;
+            background-position: -179px 14px;
+          }
+
+          input {
+            width: 268px;
+            height: 41px;
+            float: left;
+            padding-left: 10px;
+            text-align: center;
+            background: #168bcb;
+            border-color: #2999d6;
+            cursor: pointer;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .lianxi_ways {
+      margin-top: 50px;
+
+      .way_one {
+        width: 345px;
+        height: 250px;
+        float: left;
+      }
+
+      .way_one > * {
+        float: left;
+      }
+
+      .way_one > img {
+        position: relative;
+        top: 24px;
+      }
+
+      .way_one .way_content {
+        margin-left: 27px;
+      }
+
+      .way_one h1 {
+        line-height: 60px;
+        height: 60px;
+        width: 210px;
+        background: url(../images/lianxi_kuaier_bg.png) no-repeat bottom left;
+        color: #5f4c82;
+        margin-bottom: 14px;
+      }
+
+      .way_one .way_content p {
+        line-height: 32px;
+        color: #524d5c;
+      }
+    }
+  }
+}
+
+//地图
+.baidumap {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 33px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+//页脚
+.footer {
+  width: 100%;
+  background: url("../images/yinyue_bg.jpg") no-repeat;
+  background-size: cover;
+
+  .footer-content {
+    width: 1100px;
+    height: 390px;
+    margin: 0 auto;
+
+    .music {
+      padding: 116px 0 0 276px;
+      height: 67px;
+
+      span {
+        float: left;
+        cursor: pointer;
+        width: 57px;
+        height: 57px;
+        margin-right: 26px;
+
+        &:nth-of-type(1) {
+          background: url(../images/yinyue_duo.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+
+        &:nth-of-type(2) {
+          background: url(../images/yinyue_lai.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+
+        &:nth-of-type(3) {
+          background: url(../images/yinyue_mi.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+
+        &:nth-of-type(4) {
+          background: url(../images/yinyue_fa.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+
+        &:nth-of-type(5) {
+          background: url(../images/yinyue_suo.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+
+        &:nth-of-type(6) {
+          background: url(../images/yinyue_la.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+
+        &:nth-of-type(7) {
+          background: url(../images/yinyue_xi.png) no-repeat;
+
+          &:hover {
+            background-position-y: -57px;
+          }
+        }
+      }
+    }
+
+    .shenmin {
+      border-top: 2px #9890a2 dashed;
+      text-align: center;
+      line-height: 65px;
+      margin-top: 79px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

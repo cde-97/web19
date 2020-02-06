@@ -1,0 +1,942 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 1200px;
+}
+#top {
+    width: 1519px;
+    height: 80px;
+    background: url("../images/top-backgroundImg.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+#top i {
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    color: #CCCCCC;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#top-nav {
+    width: 1519px;
+    height: 45px;
+    position: fixed;
+    padding-top: 15px;
+    z-index: 5;
+    top: 0;
+    background-color: #FFFFFF;
+    padding-left: 250px;
+    display: none;
+}
+
+#top-nav .goodsList-top {
+    list-style: none;
+    display: inline-block;
+    width: 192px;
+
+
+}
+
+#top-nav .goodsList-top i {
+    float: left;
+    color: #bfbfbf;
+    font-size: 11px;
+    margin: 2px 5px 0;
+}
+
+#top-nav .goodsList-top dl {
+    display: inline-block;
+}
+
+#top-nav .goodsList-top > li:first-child {
+    height: 40px;
+    background-color: red;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#top-nav .goodsList-top .goods-top {
+    height: 56px;
+    padding-top: 15px;
+    background-color: rgba(51, 51, 51, 0.9);
+    display: none;
+}
+
+#top-nav .goodsList-top .goods-top:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+#top-nav .goodsList-top .goods-top span {
+    margin-right: 2px;
+}
+
+#top-nav .goodsList-top .goods-top dl span:hover {
+    color: red;
+}
+
+#top-nav .goodsList-top .goods-top dl dd {
+    font-size: 11px;
+    color: #f2ffff;
+}
+
+#top-nav .goodsList-top .goods-top dl dt {
+    font-size: 11px;
+    color: #bfbfbf;
+    margin-top: 2px;
+}
+
+#top-nav .detial-top {
+    width: 780px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    left: 442px;
+    top: 55px;
+    box-shadow: 0px -2px 2px #CCCCCC;
+    padding: 20px;
+    z-index: 2;
+}
+
+#top-nav .detial-top .detialTitle {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#top-nav .detial-top .detialTitle span {
+    display: inline-block;
+    padding: 4px 7px;
+    background-color: #333333;
+    color: white;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+#top-nav .detial-top .detialText {
+    width: 610px;
+    float: left;
+}
+
+#top-nav .detial-top .detialText > li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #7f7f7f;
+    overflow: hidden;
+}
+
+#top-nav .detial-top .detialText li {
+    list-style: none;
+}
+
+#top-nav .detial-top .detialText li ul li {
+    float: left;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#top-nav .detial-top .detialText li ul li:hover {
+    color: red;
+}
+
+#top-nav .detial-top .detialText > li div {
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+
+}
+
+#top-nav .detial-top .detialText li ul {
+    float: left;
+    width: 540px;
+    margin-left: 10px;
+}
+
+#top-nav .detial-top .detialText li ul li {
+
+    padding: 0 10px;
+    height: 20px;
+    font-size: 12px;
+    color: #555555;
+    position: relative;
+    text-align: center;
+}
+
+#top-nav .detial-top .detialText li ul li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 60%;
+    border-left: 1px solid #555555;
+}
+
+#top-nav .detial-top .detialImg {
+    width: 158px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    /*border: 1px solid #CCCCCC;*/
+    border-collapse: collapse;
+}
+
+#top-nav .detial-top .detialImg td {
+    width: 50%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+}
+
+#top-nav .detial-top .detialImg td img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+#top-nav .detial-top .detialImg tr:last-child td {
+    width: 100%;
+    height: 80px;
+    border: 0;
+    box-sizing: content-box;
+}
+
+#top-nav .searchBox {
+    position: absolute;
+    width: 780px;
+    height: 40px;
+    left: 480px;
+    top: 20px;
+}
+
+#top-nav .searchBox p{
+    height: 30px;
+    text-align: center;
+}
+
+#top-nav .searchBox p input:nth-of-type(1) {
+    font-size: 11px;
+    height: 27px;
+    width: 350px;
+    float: left;
+    border: 1px solid red;
+}
+
+#top-nav .searchBox p .seek {
+    float: left;
+    width: 60px;
+    height: 29px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    border: 0;
+}
+
+#top-nav .searchBox #btn1-top {
+    background-color: red;
+    margin-right: 10px;
+}
+
+#top-nav .searchBox p #btn2-top {
+    background-color: #b31919;
+}
+
+#top-nav .searchBox p span {
+    padding: 0 5px;
+    font-size: 11px;
+    color: #777777;
+    position: relative;
+}
+#top-nav .searchBox p span:hover{
+    color: red;
+    cursor: pointer;
+}
+#top-nav .searchBox p span:nth-of-type(1):before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    border-right: 1px solid #d2d2d2;
+
+}
+#top-nav .searchBox p i{
+    margin-left: 20px;
+}
+
+#head {
+    width: 1519px;
+    height: 648px;
+    background: url("../images/banner-backgroundImg.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #f5f6fa;
+    position: relative;
+}
+
+#head #topContent {
+    width: 1020px;
+    height: 670px;
+    position: absolute;
+    left: 250px;
+}
+
+#head #topContent .shopLogo {
+    width: 192px;
+    height: 110px;
+    background-color: #FFFFFF;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 5px 0px 2px #e9e9e9;
+}
+
+#head #topContent .head-nav {
+    width: 820px;
+    height: 23px;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #EEEEEE;
+}
+
+#head #topContent .head-nav .addressName {
+    position: absolute;
+    width: 480px;
+    left: 0;
+    top: 23px;
+    z-index: -1;
+    background-color: white;
+    cursor: pointer;
+}
+
+#head #topContent .head-nav .addressName p:nth-of-type(1) span {
+    margin: 0 5px;
+    font-size: 13px;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+#head #topContent .head-nav .addressName p:nth-of-type(1) span:hover {
+    background-color: red;
+    color: white;
+}
+
+#head #topContent .head-nav .addressName p:nth-of-type(2) span {
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+#head #topContent .head-nav .addressName p:nth-of-type(2) span:hover {
+    color: red;
+
+}
+
+#head #topContent .head-nav .addressName .addBox {
+    width: 480px;
+    height: 148px;
+    overflow: auto;
+    position: relative;
+}
+/*改变滚动条样式*/
+#head #topContent .head-nav .addressName .addBox::-webkit-scrollbar{
+    background-color: #CCCCCC;
+}
+#head #topContent .head-nav .addressName .addBox::-webkit-scrollbar-thumb{
+    display: inline-block;
+    height: 10px;
+    width: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+#head #topContent .head-nav .addressName .addBox::-webkit-scrollbar-track{
+    width: 10px;
+}
+#head #topContent .head-nav .addressName .addBox::-webkit-scrollbar-track-piece{
+    width: 8px;
+}
+#head #topContent .head-nav .addressName .addBox::-webkit-scrollbar-corner{
+
+}
+#head #topContent .head-nav .addressName .addBox > span {
+    float: left;
+    font-size: 13px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+#head #topContent .head-nav .addressName .addBox .addList {
+    width: 440px;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#head #topContent .head-nav .addressName .addBox .addList span {
+    padding: 0 5px;
+    display: inline-block;
+}
+
+#head #topContent .head-nav .addressName .addBox .addList span:hover {
+    background-color: #EEEEEE;
+    color: red;
+}
+
+#head #topContent .head-nav .navlist {
+    list-style: none;
+    display: inline-block;
+}
+
+#head #topContent .head-nav .navlist > li {
+    float: left;
+    padding: 0 5px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#head #topContent .head-nav .navlist:first-child > li:nth-of-type(2) {
+    color: red;
+}
+
+#head #topContent .head-nav .navlist:first-child > li:nth-of-type(3):hover {
+    color: red;
+}
+
+#head #topContent .head-nav ul:last-child {
+    float: right;
+    position: relative;
+
+}
+
+#head #topContent .head-nav ul:last-child li:hover {
+    color: red;
+}
+
+#head #topContent .head-nav .siteNavContent {
+    position: absolute;
+    width: 300px;
+    left: 28px;
+    top: 22px;
+    background-color: white;
+    z-index: -1;
+}
+
+#head #topContent .head-nav .siteNavContent .cont1 {
+    width: 80px;
+    float: left;
+    margin-top: 10px;
+}
+
+#head #topContent .head-nav .siteNavContent .cont1 ul {
+    list-style: none;
+    padding-right: 20px;
+    border-right: 1px solid #CCCCCC;
+    font-size: 11px;
+}
+
+#head #topContent .head-nav .siteNavContent .cont1 ul li:first-child {
+    font-size: 11px;
+    font-weight: bold;
+    color: #555555;
+}
+
+#head #topContent .head-nav .siteNavContent .cont1 ul li {
+    margin: 3px 0;
+    color: #55557b;
+}
+
+#head #topContent .head-nav .siteNavContent .cont2 {
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+}
+
+#head #topContent .head-nav .siteNavContent .cont2 ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 11px;
+}
+
+#head #topContent .head-nav .siteNavContent .cont2 ul li {
+    width: 32%;
+    margin: 3px 0;
+    color: #55557b;
+}
+
+#head #topContent .head-nav .siteNavContent .cont2 p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #555555;
+}
+
+#head #topContent .searchBox {
+    position: absolute;
+    width: 780px;
+    height: 80px;
+    left: 250px;
+    top: 25px;
+}
+
+#head #topContent .searchBox p:first-child {
+    margin-top: 15px;
+    height: 30px;
+}
+
+#head #topContent .searchBox p:first-child input:nth-of-type(1) {
+    font-size: 11px;
+    height: 27px;
+    width: 350px;
+    float: left;
+    border: 1px solid red;
+}
+
+#head #topContent .searchBox p:first-child .seek {
+    float: left;
+    width: 60px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    border: 0;
+}
+
+#head #topContent .searchBox #btn1 {
+    background-color: red;
+    margin-right: 10px;
+}
+
+#head #topContent .searchBox p:first-child #btn2 {
+    background-color: #b31919;
+}
+
+#head #topContent .searchBox p:first-child span {
+    float: right;
+    display: inline-block;
+    width: 160px;
+    height: 28px;
+    margin-right: 20px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    color: red;
+}
+
+#head #topContent .searchBox p:last-child {
+    font-size: 11px;
+    color: #bfbfbf;
+}
+
+#head #topContent .searchBox p:last-child span {
+    margin-right: 10px;
+}
+
+#head #topContent .searchBox p:last-child span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#head #topContent .goodsList {
+    list-style: none;
+    display: inline-block;
+    width: 192px;
+
+}
+
+#head #topContent .goodsList i {
+    float: left;
+    color: #bfbfbf;
+    font-size: 11px;
+    margin: 2px 5px 0;
+}
+
+#head #topContent .goodsList dl {
+    display: inline-block;
+}
+
+#head #topContent .goodsList > li:first-child {
+    height: 40px;
+    background-color: red;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#head #topContent .goodsList .goods {
+    height: 56px;
+    padding-top: 15px;
+    background-color: #333333;
+}
+
+#head #topContent .goodsList .goods:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+#head #topContent .goodsList .goods span {
+    margin-right: 2px;
+}
+
+#head #topContent .goodsList .goods dl span:hover {
+    color: red;
+}
+
+#head #topContent .goodsList .goods dl dd {
+    font-size: 11px;
+    color: #f2ffff;
+}
+
+#head #topContent .goodsList .goods dl dt {
+    font-size: 11px;
+    color: #bfbfbf;
+    margin-top: 2px;
+}
+
+#head #topContent .banner {
+    width: 820px;
+    display: inline-block;
+    position: absolute;
+    top: 111px;
+}
+
+#head #topContent .banner p {
+    height: 40px;
+    line-height: 40px;
+}
+
+#head #topContent .banner p a {
+    width: 75px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+}
+
+#head #topContent .banner p a:hover {
+    color: red;
+}
+
+#head #topContent .banner #bannerBox {
+    height: 496px;
+    float: left;
+    list-style: none;
+    overflow: hidden;
+}
+
+#head #topContent .banner .dot li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(204, 204, 204, .5);
+    margin: 0 5px;
+    margin-bottom: 4px;
+}
+
+#head #topContent .banner .dot .active {
+    background-color: white;
+}
+
+#head #topContent .banner #bannerBox li img {
+    width: 660px;
+    height: 496px;
+}
+
+#head #topContent .banner .userEnter {
+    width: 160px;
+    height: 496px;
+    display: inline-block;
+    border-top: 1px solid red;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+#head #topContent .banner .userEnter img:first-child {
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(1) {
+    text-align: center;
+    font-size: 13px;
+    height: 30px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(2) {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(2) span {
+    display: inline-block;
+    width: 65px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 6px 5px #ebebeb;
+    cursor: pointer;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(2) span:nth-of-type(1) {
+    background-color: white;
+    color: red;
+    margin-right: 3px;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(2) span:nth-of-type(1):hover {
+    background-color: red;
+    color: #555555;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(2) span:nth-of-type(2) {
+    background-color: red;
+    color: white;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(3) {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(3) .message {
+    display: inline-block;
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(3) span:nth-of-type(2) {
+    display: inline-block;
+    width: 1px;
+    background-color: grey;
+    height: 10px;
+}
+
+#head #topContent .banner .userEnter .notice .noticeList {
+    list-style: none;
+    height: 75px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#head #topContent .banner .userEnter .notice .noticeList li {
+    line-height: 25px;
+    margin-left: 5px;
+    color: #55557b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#head #topContent .banner .userEnter .notice .noticeList li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(3) .message:first-child:hover {
+    color: red;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(3) .message:last-child:hover {
+    color: red;
+}
+
+#head #topContent .banner .userEnter p:nth-of-type(4) {
+    margin-top: 16px;
+}
+
+#head #topContent .banner .userEnter .userInfo {
+    width: 160px;
+    height: 130px;
+
+}
+
+#head #topContent .banner .userEnter .userInfo div {
+    width: 32.5%;
+    height: 50%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    border-top: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    cursor: pointer;
+}
+
+#head #topContent .banner .userEnter .userInfo div:hover span {
+    color: red;
+}
+
+#head #topContent .banner .userEnter .userInfo .items3 {
+    border-right: 0;
+}
+
+#head #topContent .banner .userEnter .userInfo .items6 {
+    border-right: 0;
+}
+
+#head #topContent .banner .userEnter .userInfo div img {
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+
+}
+
+#head #topContent .banner .userEnter .userInfo div span {
+    display: inline-block;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+#head #topContent .detial {
+    width: 780px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    left: 192px;
+    top: 151px;
+    box-shadow: 0px -2px 2px #CCCCCC;
+    padding: 20px;
+    z-index: 999;
+}
+
+#head #topContent .detial .detialTitle {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#head #topContent .detial .detialTitle span {
+    display: inline-block;
+    padding: 4px 7px;
+    background-color: #333333;
+    color: white;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+#head #topContent .detial .detialText {
+    width: 610px;
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+
+#head #topContent .detial .detialText > li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #7f7f7f;
+    overflow: hidden;
+}
+
+#head #topContent .detial .detialText li {
+    list-style: none;
+}
+
+#head #topContent .detial .detialText li ul li {
+    float: left;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/*给详情盒子中每个li添加hover*/
+
+
+#head #topContent .detial .detialText > li div {
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    width: 60px;
+    text-align: right;
+
+}
+
+#head #topContent .detial .detialText li ul {
+    float: left;
+    width: 540px;
+    margin-left: 10px;
+}
+
+#head #topContent .detial .detialText li ul li {
+
+    padding: 0 10px;
+    height: 20px;
+    font-size: 12px;
+    color: #555555;
+    position: relative;
+    text-align: center;
+}
+#head #topContent .detial .detialText li ul li:hover {
+    color: red;
+}
+
+#head #topContent .detial .detialText li ul li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 60%;
+    border-left: 1px solid #555555;
+}
+
+#head #topContent .detial .detialImg {
+    width: 158px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    /*border: 1px solid #CCCCCC;*/
+    border-collapse: collapse;
+}
+
+#head #topContent .detial .detialImg td {
+    width: 50%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+}
+
+#head #topContent .detial .detialImg td img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+#head #topContent .detial .detialImg tr:last-child td {
+    width: 100%;
+    height: 80px;
+    border: 0;
+    box-sizing: content-box;
+}

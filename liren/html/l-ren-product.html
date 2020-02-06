@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京利仁科技股份有限公司_产品中心</title>
+    <link rel="stylesheet" href="../css/l-ren-product.css">
+    <script src="../js/jquery3.4.1.js"></script>
+</head>
+<body>
+<header>
+    <ul id="top_nav">
+        <li><a href="l-ren-index.html">首页<span>HOME</span></a></li>
+        <li><a href="l-ren-about.html">关于利仁<span>ABOUT</span></a></li>
+        <li><a href="#">视频专区<span>VIDEO</span></a></li>
+        <li><a href="#" style="color: red">产品中心<span>PRODUCT</span></a></li>
+        <li><a href="l-ren-foreign.html">外贸业务<span>TRADE</span></a></li>
+        <li><a href="l-ren-cooperation.html">招商合作<span>PARTNER</span></a></li>
+        <li><a href="l-ren-contact.html">联系利仁<span>OONTACT</span></a></li>
+        <li><a href="#">English<span>English</span></a></li>
+    </ul>
+</header>
+<article>
+    <section id="sec-one">
+        <div id="nav">
+            <ul class="pc-nav">
+                <li>电饼铛</li>
+                <li>电火锅</li>
+                <li>电压力锅</li>
+                <li>电烧烤盘</li>
+                <li>电饭煲</li>
+                <li>电蒸锅</li>
+                <li>电水瓶</li>
+                <li>电水壶</li>
+                <li>创新产品</li>
+                <li style="background-color: #c21718">网上购物</li>
+            </ul>
+        </div>
+    </section>
+    <section id="sec-two">
+        <div class="container">
+            <p>
+                产品中心
+                <a href="#" class="alter">好产品与百姓共享，专业铸就品牌，服务创造价值</a>
+            </p>
+        </div>
+        <div id="product">
+            <p class="nav">厨房电器：<a href="#">全部</a><a href="#">电饼铛</a><a href="#">电火锅</a><a href="#">电压力锅</a><a href="#">电烧烤盘</a><a
+                    href="#">电饭煲</a><a href="#">电蒸锅</a><a href="#">电水瓶</a><a href="#">电水壶</a><a href="#">创新产品</a></p>
+            <ul class="productList"></ul>
+        </div>
+    </section>
+    <section id="sec-three">
+        <div class="contain">
+            <ul class="imgList">
+                <li><img src="../images/img-line.png" alt="">在线选购</li>
+                <li><img src="../images/img-store.png" alt="">实体选购</li>
+                <li><img src="../images/img-sale.png" alt="">售后服务</li>
+                <li><img src="../images/img-tel.png" alt="">致电利仁</li>
+            </ul>
+        </div>
+    </section>
+</article>
+<footer>
+    <ul class="footernav">
+        <li>精致美食</li>
+        <li>健康食谱</li>
+        <li>餠食文化</li>
+        <li>创意美食</li>
+    </ul>
+    <ul class="footernav">
+        <li>精致生活</li>
+        <li>品质优生活</li>
+        <li>健康生活</li>
+        <li>厨房新概念</li>
+    </ul>
+    <ul class="footernav">
+        <li>精致服务</li>
+        <li>常见问题</li>
+        <li>售后服务</li>
+        <li>在线咨询</li>
+        <li>客户留言</li>
+    </ul>
+    <ul class="footernav">
+        <li>关于利仁</li>
+        <li>新闻动态</li>
+        <li>企业简介</li>
+        <li>企业文化</li>
+        <li>发展历程</li>
+        <li>工作机会</li>
+    </ul>
+    <ul class="footerImg">
+        <li>
+            <img src="../images/ma.jpg" alt="">
+            <p>利仁官方微信</p>
+        </li>
+        <li>
+            <img src="../images/ma1.jpg" alt="">
+            <p>利仁官方微博</p>
+        </li>
+    </ul>
+    <div class="footerRight">
+        <p>400-882-3366</p>
+        <p>周一到周日 7:30-9:30</p>
+        <p>
+            <a href="#">微商城</a>
+            <a href="#">在线客服</a>
+        </p>
+    </div>
+    <div class="footerBottom">
+        <span>库存查询</span>
+        <span>网站导航</span>
+        <span>在线商城</span>
+        <span>利仁版权图片</span>
+        <span>版权所有 2010-2017北京利仁科技股份有限公司 | 京ICP备06015595号</span>
+    </div>
+</footer>
+<script>
+    $(function () {
+        var productArr = [
+            {
+                'tilte': '利仁（Liven）CX-81',
+                'imgSrc': '../images/pro01.jpg',
+            },
+            {
+                'tilte': 'LIVEN 3L Electric Skillet, Electric Pan, Electric Hot Pot, Cast Aluminum Pot Body with Non-stick Surface Dia 22cm Depth 8.0m 1350W 120V DHG-233A',
+                'imgSrc': '../images/pro02.jpg',
+            },
+            {
+                'tilte': 'Liven 1.8L Electric hot pot with 304 Stainless Steel Pot for Shabu Shabu Cooking Noodles Boiling Water Personal Mini Travel Pot Small Electric Cooker 1000W 120V DHG-180F',
+                'imgSrc': '../images/pro03.jpg',
+            },
+            {
+                'tilte': '5L Electric Shabu Shabu Pot with Divider and Non-Stick Coating Electric Hot Pot 1600W 120V HG-301AY',
+                'imgSrc': '../images/pro04.jpg',
+            }, {
+                'tilte': '利仁（Liven）HG-X1201',
+                'imgSrc': '../images/pro05.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）YSG-N1800B',
+                'imgSrc': '../images/pro06.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）HG-X1200',
+                'imgSrc': '../images/pro07.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）YSG-N1800A',
+                'imgSrc': '../images/pro08.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）HG-X1500',
+                'imgSrc': '../images/pro09.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）YG-J421',
+                'imgSrc': '../images/pro10.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）YG-D420',
+                'imgSrc': '../images/pro11.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-J3400A',
+                'imgSrc': '../images/pro12.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-J2500',
+                'imgSrc': '../images/pro13.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-J400',
+                'imgSrc': '../images/pro14.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）LR-D1805',
+                'imgSrc': '../images/pro15.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）LR-D1803',
+                'imgSrc': '../images/pro16.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）LR-D1802',
+                'imgSrc': '../images/pro17.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）LR-D1801',
+                'imgSrc': '../images/pro18.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）LR-D1804',
+                'imgSrc': '../images/pro19.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SP-A5800',
+                'imgSrc': '../images/pro20.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SP-A4600',
+                'imgSrc': '../images/pro21.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SH-S1801A',
+                'imgSrc': '../images/pro22.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SH-S1800C',
+                'imgSrc': '../images/pro23.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SH-S1800B',
+                'imgSrc': '../images/pro24.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-J5000B',
+                'imgSrc': '../images/pro25.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）FB-D841',
+                'imgSrc': '../images/pro26.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）FG-D832',
+                'imgSrc': '../images/pro27.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）FG-D820',
+                'imgSrc': '../images/pro28.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）DHG-230B',
+                'imgSrc': '../images/pro29.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）DHG-230A',
+                'imgSrc': '../images/pro30.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SP-D4601',
+                'imgSrc': '../images/pro31.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SH-S1503',
+                'imgSrc': '../images/pro32.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-J3400',
+                'imgSrc': '../images/pro33.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-J5000A',
+                'imgSrc': '../images/pro34.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）KZ-D1001A',
+                'imgSrc': '../images/pro35.jpg',
+            },
+            {
+                'tilte': '利仁（Liven）SP-A3600',
+                'imgSrc': '../images/pro36.jpg',
+            },
+        ];
+        $('.productList').css({
+            'display': 'flex',
+            'flexFlow': 'wrap',
+            'justifyContent': 'space-between',
+            'listStyle': 'none',
+        })
+        for (var i = 0, j = 0; i < productArr.length && j < 12; i++, j++) {
+            var $li = $('<li></li>');
+            var $imgbox = $('<div class="imgbox"></div>');
+            var $img = $('<img></img>');
+            $img.attr('src', productArr[i]["imgSrc"]);
+            $imgbox.append($img)//插入img
+            var $imgsek = $('<img id="sekImg" src="../images/sek.png"></img>');
+            $imgbox.append($imgsek)//插入搜索图标
+            $li.append($imgbox);//插入imgBox
+            var $p = $('<p></p>');
+            $p.text(productArr[i]['tilte']);
+            $li.append($p);//插入标题
+            var $span = $('<span class="info">查看详情</span>');
+            $li.append($span);
+            $('.productList').append($li);
+            $li.css({
+                'width': '23%',
+                'height': '300px',
+                'border': '1px solid #e2e2e2',
+                'marginTop': '20px',
+                'overflow': 'hidden',
+            })
+            $imgbox.css({
+                'width': '100%',
+                'height': '240px',
+            });
+            $img.css({
+                'width': '100%',
+                'height': '90%',
+            });
+            $p.css({
+                'overflow': 'hidden',
+                'whiteSpace': 'nowrap',
+                'textOverflow': 'ellipsis',
+                'border': 0,
+                'height': '25px',
+                'lineHeight': '25px'
+            })
+            $span.css({
+                'paddingLeft': '20px',
+                'fontSize': '11px',
+
+
+            })
+        }
+        $('.productList').after($('<p>加载更多</p>'));
+        $('.productList').next().css({
+            'textAlign': 'center',
+            'height': '32px',
+            'lineHeight': '32px',
+            'fontSize': '13px',
+            'marginTop': '20px',
+        })
+        $('.productList').next().on('click', function () {
+            var len = $('.productList li').length;
+            if ($('.productList li').length < productArr.length) {
+                for (var i = len, j = 0; i < productArr.length && j < 12; i++, j++) {
+                    var $li = $('<li></li>');
+                    var $imgbox = $('<div class="imgbox"></div>');
+                    var $img = $('<img></img>');
+                    $img.attr('src', productArr[i]["imgSrc"]);
+                    $imgbox.append($img)//插入img
+                    var $imgsek = $('<img id="sekImg" src="../images/sek.png"></img>');
+                    $imgbox.append($imgsek)//插入搜索图标
+                    $li.append($imgbox);//插入imgBox
+                    var $p = $('<p></p>');
+                    $p.text(productArr[i]['tilte']);
+                    $li.append($p);//插入标题
+                    var $span = $('<span class="info">查看详情</span>');
+                    $li.append($span);
+                    $('.productList').append($li);
+                    $li.css({
+                        'width': '23%',
+                        'height': '300px',
+                        'border': '1px solid #e2e2e2',
+                        'marginTop': '20px',
+                        'overflow': 'hidden',
+                    })
+                    $imgbox.css({
+                        'width': '100%',
+                        'height': '240px',
+                    });
+                    $img.css({
+                        'width': '100%',
+                        'height': '90%',
+                    });
+                    $p.css({
+                        'overflow': 'hidden',
+                        'whiteSpace': 'nowrap',
+                        'textOverflow': 'ellipsis',
+                        'border': 0,
+                        'height': '25px',
+                        'lineHeight': '25px'
+                    })
+                    $span.css({
+                        'paddingLeft': '20px',
+                        'fontSize': '11px',
+                    })
+                }
+            } else {
+                $(this).text('精彩内容，敬请期待!');
+            }
+        })
+    })
+
+
+</script>
+</body>
+</html>
+</body>
+</html>
